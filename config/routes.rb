@@ -182,16 +182,15 @@ MAdeK::Application.routes.draw do
 
 ###############################################
 
-  # TODO rename :import
-  resource :upload, :controller => 'upload', :except => :new do
-    member do
-      get :permissions
-      get :set_media_sets
-      put :complete
-      get :dropbox
-      post :dropbox
-    end
-  end
+  get  'import' => 'import#start'
+  post 'import' => 'import#upload'
+  delete 'import' => 'import#destroy'
+  get  'import/dropbox' => 'import#dropbox'
+  post 'import/dropbox' => 'import#dropbox'
+  get  'import/permissions' => 'import#permissions'
+  get  'import/meta_data' => 'import#meta_data'
+  get  'import/organize' => 'import#organize'
+  put  'import/complete' => 'import#complete'
   
 ###################
    

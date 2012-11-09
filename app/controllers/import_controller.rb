@@ -1,8 +1,6 @@
 # -*- encoding : utf-8 -*-
 
-class UploadController < ApplicationController
-
-  layout "upload"
+class ImportController < ApplicationController
 
   before_filter :except => [:create, :dropbox_dir] do
     @media_entry_incompletes =  @media_entries = current_user.incomplete_media_entries
@@ -11,7 +9,7 @@ class UploadController < ApplicationController
 ##################################################
 # step 1
 
-  def show
+  def start
     dropbox_files = unless AppSettings.dropbox_root_dir and File.directory?(AppSettings.dropbox_root_dir)
       @dropbox_exists = false
       []
@@ -37,7 +35,7 @@ class UploadController < ApplicationController
     end
   end
     
-  def create
+  def upload
     uploaded_data = if params[:file]
       params[:file]
     elsif params[:dropbox_file]
@@ -57,7 +55,7 @@ class UploadController < ApplicationController
     end
 
     respond_to do |format|
-      format.html { redirect_to upload_path } # NOTE we need this for the Plupload html fallback
+      format.html { redirect_to "import" } # NOTE we need this for the Plupload html fallback
       format.js { render :json => {"media_entry_incomplete" => {"id" => media_entry_incomplete.id} } } # NOTE this is used by Plupload
       format.json { render :json => {"dropbox_file" => params[:dropbox_file], "media_entry_incomplete" => {"id" => media_entry_incomplete.id, "filename" => media_entry_incomplete.media_file.filename} } }
     end
@@ -90,29 +88,19 @@ class UploadController < ApplicationController
 # step 2
 
   def permissions
-    
   end 
 
 ##################################################
 # step 3
 
-  def edit
+  def meta_edit
     @context = MetaContext.upload
-  end
-
-  def update
-    params[:resources][:media_entry_incomplete].each_pair do |key, value|
-      media_entry = @media_entries.detect{|me| me.id == key.to_i } #old# .find(key)
-      media_entry.update_attributes(value)
-    end
-
-    redirect_to set_media_sets_upload_path
   end
 
 ##################################################
 # step 4
 
-  def set_media_sets
+  def organize
   end
 
 ##################################################
@@ -124,13 +112,12 @@ class UploadController < ApplicationController
     else
       # OPTIMIZE
       flash[:error] = "Einige Medieneinträge sind ungültig"
-      redirect_to set_media_sets_upload_path
+      redirect_to "import/meta_data"
     end
   end
 
 ##################################################
 
-  
   def destroy
      respond_to do |format|
        
