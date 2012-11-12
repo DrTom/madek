@@ -9,23 +9,76 @@
 }
 .app-body {
   padding: $space-m $space-m $space-l;
+  position: relative;
 }
 .app-sidebar,
 .app-content {
-    display: table-cell;
-    vertical-align: top;
+  display: table-cell;
+  vertical-align: top;
 }
 .app-sidebar {
   @include border-left-radius($border-radius-m);
-  width: 200px;
+  width: 15%;
 }
 .app-content {
   @include border-right-radius($border-radius-m);
   border-left: 1px solid $grey-mid-light;
   margin-left: -1px;
+  width: 85%;
 }
 .app-content .separator {
   margin-bottom: $space-m;
+}
+.body-wrapper {
+  @include border-radius($border-radius-m);
+  display: table;
+  table-layout:fixed;
+  width: 100%;
+}
+
+
+// HOME PAGE VIEW
+
+.view-home-page .elevator-pitch {
+  @include dimension(940px,220px);
+  @include position-top-right(50%,50%);
+  @include position-bottom-left(50%,50%);
+  margin: -130px -490px;
+  z-index: 50;
+}
+.view-home-page .app-body {
+  margin: 0 auto;
+  padding: 0 0 $space-l;
+  position: relative;
+  width: 980px;
+  .header-menu {
+    margin-top: -50px;
+  }
+  .header-menu .tab-navigation-item {
+    @include box-shadow(0 -2px 2px $darken-more);
+  }
+  .media-entries-wrapper {
+    margin-top: $space-m;
+    padding: 0;
+    width: 100%;
+  }
+  .media-entries-header {
+    padding-left: $space-s;
+    margin-left: $space-x;
+  }
+  .media-entries-item {
+    margin-left: -1px;
+  }
+  .thumbnail-wrapper {
+    margin-right: 0;
+    &.media-catalog {
+      margin-right: 3px;
+    }
+  }
+  hr.separator {
+    margin-left: $space-s;
+    margin-right: $space-s;
+  }
 }
 
 // DASHBOARD VIEW
