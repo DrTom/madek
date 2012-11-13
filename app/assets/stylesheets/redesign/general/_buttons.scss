@@ -193,7 +193,7 @@ a:active {
   @include background-image(linear-gradient(darken($green-light, 10%), darken($green-mid, 10%)));
   @include single-text-shadow(false, -1px, 0, false, $darken);
   border-color: darken($green-dark, 5%);
-  color: darken($brightest, 5%);
+  color: darken($brightest, 20%);
   outline: 0;
 }
 
