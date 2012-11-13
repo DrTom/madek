@@ -7,3 +7,5 @@
 #= require ./vendor/bootstrap-2.2.1/bootstrap-dropdown
 #= require ./vendor/bootstrap-2.2.1/bootstrap-tab
 #= require ./vendor/bootstrap-2.2.1/bootstrap-collapse
+
+#= require ./vendor/plupload/plupload

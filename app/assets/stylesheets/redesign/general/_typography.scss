@@ -59,7 +59,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: $line-height-s
 }
-.title-xs-alt {
+.title-xs-alt,
+.small-print {
   color: $grey-mid;
   font-size: $font-xs;
   line-height: $line-height-m;

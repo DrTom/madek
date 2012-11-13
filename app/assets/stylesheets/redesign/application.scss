@@ -35,9 +35,11 @@
 @import "components/side-filter";
 @import "components/side-navigation";
 @import "components/slider";
+@import "components/stepline";
 @import "components/tag-cloud";
 @import "components/tab-navigation";
 @import "components/thumbnail-wrappers";
+@import "components/upload-box.scss";
 
 // Combos
 @import "combos/clipboard";
@@ -50,8 +52,8 @@
 @import "combos/media-entries-grid";
 @import "combos/metadata-summary";
 @import "combos/media-overview";
-@import "combos/stepline";
 @import "combos/toolbar";
+@import "combos/wizard";
 
 // Layout
 @import "layout";

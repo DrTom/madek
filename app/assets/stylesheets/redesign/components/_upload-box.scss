@@ -1,0 +1,17 @@
+/**
+ * ## Upload Container `.upload-container`
+ *
+ * Styleguide 8.9.1
+ */
+
+.upload-container {
+  min-height: 200px;
+}
+.upload-call {
+  color: $grey-mid;
+  font-size: $font-l;
+  font-weight: 700;
+  position: relative;
+  text-align: center;
+  top: 70px;
+}
