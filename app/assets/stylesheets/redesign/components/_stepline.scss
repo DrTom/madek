@@ -24,6 +24,7 @@
 }
 .stepline-item-title,
 .stepline-item-description {
+  @include single-text-shadow(false, 1px, 0, false, $lighten-more);
   color: $grey-mid;
   padding: 0 $space-s;
 }
@@ -38,11 +39,16 @@
   border-color: $brightest $grey-mid-light;
   border-width: 0 1px 1px;
   background: $brightest;
-  position: relative;
-  left: -1px;
-  right: -1px;
   .stepline-item-title,
   .stepline-item-description {
     color: $grey-darker;
+  }
+  &:first-child {
+    @include border-top-left-radius($border-radius-m);
+    border-left: none;
+  }
+  &:last-child {
+    @include border-top-right-radius($border-radius-m);
+    border-right: none;
   }
 }
