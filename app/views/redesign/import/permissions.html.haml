@@ -1,1 +1,114 @@
-%h1.title-xl Import / Permissions
+.app-content-wrapper.container.view-media-import
+
+  // Header
+
+  %header.app-header.container.inverted
+    .header-brand-area
+      %a.header-brand-logo{:href => "#"}
+        %img{:alt => "Image-logo-zhdk", :src => "/assets/redesign/inserts/image-logo-zhdk.png"}
+      %h1.header-brand-name Z&uuml;rcher Hochschule der K&uuml;nste
+      %h2.header-instance-name Medienarchiv der K&uuml;nste
+    %ul.header-menu.large.primary.tab-navigation
+      %li.tab-navigation-item
+        %a{:href => "#"} Mein Archiv
+      %li.tab-navigation-item
+        %a{:href => "#"} Erkunden
+      %li.tab-navigation-item
+        %a{:href => "#"}
+          %i.icon-search.bright
+          Suchen
+      %li.tab-navigation-item
+        %a{:href => "#"}
+          %i.icon-help.bright Help
+    .header-user-area.by-right
+      .dropdown
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          Franziska M&uuml;ller-Rei&szlig;mann
+          %i.icon-arrow-down.bright.stand-alone
+        %ul.dropdown-menu{"aria-labelledby" => "dLabel", :role => "menu"}
+          %li.dropdown-menu-item
+            %a{:href => "#"} Abmelden
+
+  // Body
+
+  .app-body.container
+    .page-title
+      .page-title-label
+        %h1.title-xl Medien Importieren
+
+    .body-wrapper.container.bordered.bright
+
+      .stepline
+        .stepline-item
+          %h3.title-s.stepline-item-title
+            %small
+              1 of 4
+            Medien übertragen
+          %p.stepline-item-description Fotos, Videos und Audiofiles bereitstellen
+        .stepline-item.active
+          %h3.title-s.stepline-item-title
+            %small
+              2 of 4
+            Berechtigungen setzen
+          %p.stepline-item-description Zugriff und Sichtbarkeit festlegen
+        .stepline-item
+          %h3.title-s.stepline-item-title
+            %small
+              3 of 4
+            Metadaten ergänzen
+          %p.stepline-item-description Titel, Beschreibung und Rechte hinzufügen
+        .stepline-item
+          %h3.title-s.stepline-item-title
+            %small
+              4 of 4
+            Medien zusammenstellen
+          %p.stepline-item-description Fotos, Videos und Audiofiles in Sets verwalten (optional)
+
+      .media-import.step2.pal
+
+        %h3.title-l Berechtigungen setzen
+
+        %hr.separator
+
+        .container.clearfix.mvl.bordered.midtone.roundend.upload-overview
+
+          %ul.media-entries.grid
+            %li.media-entries-item
+              .thumbnail-wrapper.media-entry
+                .thumbnail-audio.thumbnail
+                  %img{:alt => "", :src => "/assets/redesign/thumbnails/tmp-thumb-large.jpg"}
+
+        %hr.separator
+
+        .actions-bar.ptl
+          %a
+            Abbrechen
+          %a.primary-button.right
+            Berechtigungen speichern und weiter&hellip;
+
+  .app-footer-placeholder
+
+// Footer
+
+.app-footer-wrapper
+  %footer.app-footer.container.inverted
+    %ul.footer-menu
+      %li.footer-menu-item
+        %a{:href => "#"} Informationen zum Projekt
+      %li.footer-menu-item
+        %a{:href => "#"} Impressum
+      %li.footer-menu-item
+        %a{:href => "#"} Kontakt
+      %li.footer-menu-item
+        %a{:href => "#"} Blog
+      %li.footer-menu-item
+        %a{:href => "#"} Hilfe
+      %li.footer-menu-item
+        %a{:href => "#"} Nutzungsbestimmungen
+      %li.footer-menu-item
+        %a{:href => "#"} Freie Software
+      %li.footer-menu-item
+        %a{:href => "#"} Archivierungsrichtlinien ZHdK
+    .footer-instance-area.col2of6
+      %a.footer-instance-logo{:href => "#"}= image_tag "redesign/inserts/image-logo-madek.png"
+      %h1.footer-copyrights &copy; 2009-2011 Z&uuml;rcher Hochschule der K&uuml;nste

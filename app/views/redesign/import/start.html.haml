@@ -1,5 +1,3 @@
-
-
 .app-content-wrapper.container.view-media-import
 
   // Header
@@ -11,7 +9,7 @@
       %h1.header-brand-name Z&uuml;rcher Hochschule der K&uuml;nste
       %h2.header-instance-name Medienarchiv der K&uuml;nste
     %ul.header-menu.large.primary.tab-navigation
-      %li.tab-navigation-item.active
+      %li.tab-navigation-item
         %a{:href => "#"} Mein Archiv
       %li.tab-navigation-item
         %a{:href => "#"} Erkunden
@@ -23,16 +21,20 @@
         %a{:href => "#"}
           %i.icon-help.bright Help
     .header-user-area.by-right
-      %a.primary-button{:href => "#"}
-        %i.icon-user.bright
-        Anmelden
+      .dropdown
+        %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+          Franziska M&uuml;ller-Rei&szlig;mann
+          %i.icon-arrow-down.bright.stand-alone
+        %ul.dropdown-menu{"aria-labelledby" => "dLabel", :role => "menu"}
+          %li.dropdown-menu-item
+            %a{:href => "#"} Abmelden
 
   // Body
 
   .app-body.container
     .page-title
       .page-title-label
-        %h1.title-xl Import / Start
+        %h1.title-xl Medien Importieren
 
     .body-wrapper.container.bordered.bright
 
@@ -62,24 +64,27 @@
             Medien zusammenstellen
           %p.stepline-item-description Fotos, Videos und Audiofiles in Sets verwalten (optional)
 
-      .wizard.media-import.step1.pal
-        .wizard-head
-          %h3.title-l.separated Medien übertragen
+      .media-import.step1.pal
 
-        .wizard-body.pbl
+        %h3.title-l Medien übertragen
 
-          #upload-container.upload-container.container
+        %hr.separator
+
+        .container.clearfix.mvl.bordered.midtone.roundend
+          #upload-container.upload-management
             #call2action.upload-call
               = "Sie habe noch keine Medien ausgewählt."
               %br
               %small= "(Drag & Drop)"
             #uploader
 
-        .wizard-footer.wizard-actions.ptl.container
+        %hr.separator
+
+        .actions-bar.ptl
           %a
             Abbrechen
-          %a.primary-button.large.right
-            Medien übertragen...
+          %a.primary-button.right
+            Medien übertragen&hellip;
 
       .row.container.midtone.pvm.phl
         .col1of2
