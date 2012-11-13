@@ -70,13 +70,43 @@
 
         %hr.separator
 
-        .container.clearfix.mvl.bordered.midtone.roundend
-
+        .container.clearfix.mvl.bordered.midtone.roundend.media-entries-wrapper.upload-overview
           %ul.media-entries.grid
             %li.media-entries-item
               .thumbnail-wrapper.media-entry
                 .thumbnail-audio.thumbnail
                   %img{:alt => "", :src => "/assets/redesign/thumbnails/tmp-thumb-large.jpg"}
+                .thumbnail-metadata
+                  %h3.title-s.thumbnail-name Name that can easily go onto 2 lines
+                  %h4.title-xs-alt.thumbnail-author Author that can easily go onto 2 lines as well
+            %li.media-entries-item
+              .thumbnail-wrapper.media-entry
+                .thumbnail-video.thumbnail
+                  %img{:alt => "Thumb-video", :src => "/assets/redesign/thumbnails/thumb-video-mov.png"}
+                .thumbnail-metadata
+                  %h3.title-s.thumbnail-name Name that can easily go onto 2 lines
+                  %h4.title-xs-alt.thumbnail-author Author that can easily go onto 2 lines as well
+            %li.media-entries-item
+              .thumbnail-wrapper.media-entry
+                .thumbnail-audio.thumbnail
+                  %img{:alt => "Thumb-audio", :src => "/assets/redesign/thumbnails/thumb-audio-mp3.png"}
+                .thumbnail-metadata
+                  %h3.title-s.thumbnail-name Name that can easily go onto 2 lines
+                  %h4.title-xs-alt.thumbnail-author Author that can easily go onto 2 lines as well
+            %li.media-entries-item
+              .thumbnail-wrapper.media-entry
+                .thumbnail-doc.thumbnail
+                  %img{:alt => "Thumb-doc", :src => "/assets/redesign/thumbnails/thumb-doc-doc.png"}
+                .thumbnail-metadata
+                  %h3.title-s.thumbnail-name Name that can easily go onto 2 lines
+                  %h4.title-xs-alt.thumbnail-author Author that can easily go onto 2 lines as well
+            %li.media-entries-item
+              .thumbnail-wrapper.media-entry
+                .thumbnail-audio.thumbnail
+                  %img{:alt => "", :src => "/assets/redesign/thumbnails/tmp-thumb-large.jpg"}
+                .thumbnail-metadata
+                  %h3.title-s.thumbnail-name Name that can easily go onto 2 lines
+                  %h4.title-xs-alt.thumbnail-author Author that can easily go onto 2 lines as well
 
         %hr.separator
 
@@ -84,9 +114,9 @@
           %a
             Abbrechen
           %a.primary-button.right
-            Import anschliessen
-          %a.button.right
             Eintrage zum einem Set hinzufugen
+          %a.button.right
+            Import anschliessen
 
   .app-footer-placeholder
 
