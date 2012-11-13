@@ -1,7 +1,7 @@
 /**
  * ## Upload Container `.upload-management`
  *
- * Styleguide 8.12
+ * Styleguide 8.12.1
  */
 
 .upload-management {
@@ -27,15 +27,29 @@
 }
 
 /**
+ * ## Upload Preview `.upload-preview`
+ *
+ * Styleguide 8.12.2
+ */
+
+.upload-preview {
+  @include max-dimension(auto, 350px);
+  overflow-y: auto;
+  padding: $space-s $space-s 0;
+  .thumbnail-wrapper {
+    @include dimension(140px,140px);
+  }
+}
+
+/**
  * ## Upload Overview `.upload-overview`
  *
- * Styleguide 8.12
+ * Styleguide 8.12.3
  */
 
 .upload-overview {
   @include max-dimension(auto,520px);
   display: block;
-  margin: 0;
   overflow-y: auto;
-  padding: 0;
+  padding: $space-s $space-s 0;
 }

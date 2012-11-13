@@ -70,9 +70,24 @@
 
         %hr.separator
 
-        .container.clearfix.mvl.bordered.midtone.roundend.upload-overview
-
+        .container.clearfix.mvl.bordered.midtone.roundend.upload-preview
           %ul.media-entries.grid
+            %li.media-entries-item
+              .thumbnail-wrapper.media-entry
+                .thumbnail-audio.thumbnail
+                  %img{:alt => "", :src => "/assets/redesign/thumbnails/tmp-thumb-large.jpg"}
+            %li.media-entries-item
+              .thumbnail-wrapper.media-entry
+                .thumbnail-video.thumbnail
+                  %img{:alt => "Thumb-video", :src => "/assets/redesign/thumbnails/thumb-video-mov.png"}
+            %li.media-entries-item
+              .thumbnail-wrapper.media-entry
+                .thumbnail-audio.thumbnail
+                  %img{:alt => "Thumb-audio", :src => "/assets/redesign/thumbnails/thumb-audio-mp3.png"}
+            %li.media-entries-item
+              .thumbnail-wrapper.media-entry
+                .thumbnail-doc.thumbnail
+                  %img{:alt => "Thumb-doc", :src => "/assets/redesign/thumbnails/thumb-doc-doc.png"}
             %li.media-entries-item
               .thumbnail-wrapper.media-entry
                 .thumbnail-audio.thumbnail
