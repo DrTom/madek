@@ -26,7 +26,7 @@
 .stepline-item-description {
   @include single-text-shadow(false, 1px, 0, false, $lighten-more);
   color: $grey-mid;
-  padding: 0 $space-s;
+  padding: 0 $space-m;
 }
 
 .stepline-item-title small,

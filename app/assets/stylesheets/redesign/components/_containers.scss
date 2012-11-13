@@ -6,12 +6,8 @@
  * .inverted    - Dark gradient boxes: top-nav, footer and filter bar containers
  * .inverted-transparent - Semi-transparent dark box: clipboard
  * .midtone     - Light grey box: thumb grid containers
- * .bordered    - Box with border
- * .rounded     - Rounded corners equal to medium border radius value
- * .rounded-top - Top rounded corners equal to medium border radius value
- * .rounded-bottom      - Bottom rounded corners equal to medium border radius value
- * .rounded-left        - Left rounded corners equal to medium border radius value
- * .rounded-right       - Right rounded corners equal to medium border radius value
+ * .bordered    - Box with border. Possible extensions: .bordered-bottom, .bordered-top
+ * .rounded     - Rounded corners equal to medium border radius value. Possible extensions:; .rounded-bottom, .rounded-top, .rounded-right, .rounded-left
  *
  * Styleguide 7.1
  */
