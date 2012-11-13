@@ -5,6 +5,7 @@
  */
 
 .actions-bar {
+  @include micro-clearfix;
   padding-top: $space-x;
 }
 .actions-bar .button,
