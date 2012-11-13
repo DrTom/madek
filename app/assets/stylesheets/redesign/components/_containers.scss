@@ -77,6 +77,13 @@
   border: 1px solid $grey-mid-light;
   margin-bottom: -1px ;
 }
+.container.bordered-bottom {
+  border-bottom: 1px solid $grey-mid-light;
+}
+.container.bordered-top {
+  border-bottom: 1px solid $grey-mid-light;
+  margin-top: -1px ;
+}
 
 // Rounded
 
