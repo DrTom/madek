@@ -1,0 +1,16 @@
+/**
+ * ## Actions Bar `.actions-bar`
+ *
+ * Styleguide 7.17
+ */
+
+.actions-bar {
+  padding-top: $space-x;
+}
+.actions-bar .button,
+.actions-bar .primary-button {
+  margin-left: $space-s;
+}
+.actions-bar .button.large {
+  margin-top: -$space-x;
+}
