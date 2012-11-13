@@ -22,15 +22,13 @@
   vertical-align: top;
   width: 25%;
 }
-.stepline-item-title,
-.stepline-item-description {
+.stepline-item-title {
   @include single-text-shadow(false, 1px, 0, false, $lighten-more);
   color: $grey-mid;
   padding: 0 $space-m;
 }
 
-.stepline-item-title small,
-.stepline-item-description {
+.stepline-item-title small {
   clear: both;
   display: block;
   font-size: $font-xs;
