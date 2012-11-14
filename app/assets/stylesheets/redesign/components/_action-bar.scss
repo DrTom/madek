@@ -7,8 +7,15 @@
 .actions-bar {
   @include micro-clearfix;
   padding-top: $space-x;
+  text-align: right;
 }
 .actions-bar .button,
 .actions-bar .primary-button {
-  margin-right: $space-s;
+  margin-left: $space-s;
+}
+.actions-bar .primary-button {
+  @include float-right;
+}
+.actions-bar .large {
+  margin-top: -$space-x;
 }
