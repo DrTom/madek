@@ -20,7 +20,6 @@
 }
 
 @media #{$screen-size-xs-s} {
-
   // Responsive Footer
 
   @include sticky-footer(75px, ".app-content-wrapper", ".app-footer-placeholder", ".app-footer-wrapper");
@@ -46,5 +45,31 @@
     display: inline;
     margin: 0;
   }
+}
+@media #{$screen-size-m} {
+  // Responsive Footer
 
+  @include sticky-footer(75px, ".app-content-wrapper", ".app-footer-placeholder", ".app-footer-wrapper");
+  .app-footer {
+    height: 65px;
+  }
+  .footer-menu,
+  .footer-instance-area {
+    clear: both;
+    display: block;
+    float: none;
+    text-align: center;
+    width: auto;
+  }
+  .footer-instance-logo {
+    display: inline-block;
+    float: none;
+    margin: 0 $space-s 0 0;
+    position: relative;
+    top: $space-x;
+  }
+  .footer-copyrights {
+    display: inline;
+    margin: 0;
+  }
 }
