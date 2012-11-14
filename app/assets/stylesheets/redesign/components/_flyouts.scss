@@ -1,8 +1,10 @@
 /**
- * ## Flyouts `.sets-flyout`
+ * ## Flyouts `.flyout`
  *
  * Styleguide 7.18
  */
+
+// General Flyout Structure
 
 .flyout {
   @include border-radius($border-radius-m);
@@ -31,4 +33,10 @@
 }
 .flyout-footer {
   border-width: 1px 0 0;
+}
+
+// Flyout Elements
+
+.flyout-toolbar input {
+  margin: 0;
 }

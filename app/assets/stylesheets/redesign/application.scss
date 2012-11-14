@@ -29,6 +29,7 @@
 @import "components/alerts";
 @import "components/containers";
 @import "components/dropdowns";
+@import "components/flyouts";
 @import "components/media-entries";
 @import "components/metadata-box";
 @import "components/page-title";
@@ -51,8 +52,9 @@
 @import "combos/media-entries-grid";
 @import "combos/metadata-summary";
 @import "combos/media-overview";
-@import "combos/upload.scss";
 @import "combos/toolbar";
+@import "combos/sets-flyout";
+@import "combos/upload";
 
 // Layout
 @import "layout";
