@@ -1,0 +1,34 @@
+/**
+ * ## Flyouts `.sets-flyout`
+ *
+ * Styleguide 7.18
+ */
+
+.flyout {
+  @include border-radius($border-radius-m);
+  @include box-shadow(0 1px 3px $darken);
+  @include max-dimension(350px,auto);
+  background: $brightest;
+  border: 1px solid $grey-mid-light;
+}
+
+.flyout-head,
+.flyout-toolbar,
+.flyout-body,
+.flyout-footer {
+  border-color: $grey-mid-light;
+  border-style: solid;
+  padding: $space-s;
+}
+
+.flyout-head {
+  border-width: 0 0 1px;
+}
+.flyout-body {
+  @include box-shadow(inset 0 1px 3px $darken-less);
+  border-width: 1px 0;
+  margin: -1px 0;
+}
+.flyout-footer {
+  border-width: 1px 0 0;
+}

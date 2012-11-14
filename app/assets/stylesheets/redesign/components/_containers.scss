@@ -86,7 +86,7 @@
 
 // Rounded
 
-.container.roundend {
+.container.rounded {
   @include border-radius($border-radius-m);
 }
 .container.rounded-top {
