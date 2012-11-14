@@ -8,4 +8,6 @@
 #= require ./vendor/bootstrap-2.2.1/bootstrap-tab
 #= require ./vendor/bootstrap-2.2.1/bootstrap-collapse
 
-#= require ./vendor/plupload/plupload
+#= require ./vendor/plupload-1.5.4/plupload
+#= require ./vendor/plupload-1.5.4/jquery.plupload.queue
+

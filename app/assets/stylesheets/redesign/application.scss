@@ -15,7 +15,6 @@
 /* Import app specific styles
 ----------------------------------------------- */
 
-
 // General
 @import "general/buttons";
 @import "general/button-groups";
@@ -58,3 +57,7 @@
 // Layout
 @import "layout";
 @import "layout-responsive";
+
+// Vendor
+
+@import "vendor/jquery.plupload.queue";
