@@ -46,7 +46,7 @@
     margin: 0;
   }
 }
-@media #{$screen-size-m} {
+@media #{$screen-size-m-l} {
   // Responsive Footer
 
   @include sticky-footer(75px, ".app-content-wrapper", ".app-footer-placeholder", ".app-footer-wrapper");
