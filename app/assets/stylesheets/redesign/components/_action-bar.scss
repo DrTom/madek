@@ -6,6 +6,7 @@
 
 .actions-bar {
   @include micro-clearfix;
+  margin-top: -$space-x;
   padding-top: $space-x;
   text-align: right;
 }
@@ -18,4 +19,7 @@
 }
 .actions-bar .large {
   margin-top: -$space-x;
+}
+.actions-bar .link {
+  margin-top: 3px;
 }
