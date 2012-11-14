@@ -262,3 +262,9 @@ $icons: sprite-map("redesign/icons/*.png");
 .icon-explore-tag {
   @include ixt-sprite($icons, icon-explore-hover);
 }
+.icon-plus {
+  @include ixt-sprite($icons, icon-plus-dark);
+  &.bright {
+    @include ixt-sprite($icons, icon-plus-bright);
+  }
+}
