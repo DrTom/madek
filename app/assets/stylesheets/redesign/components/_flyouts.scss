@@ -15,6 +15,11 @@
 }
 
 .flyout-head,
+.flyout-footer {
+  background: $grey-lighter;
+}
+
+.flyout-head,
 .flyout-toolbar,
 .flyout-body,
 .flyout-footer {
@@ -24,6 +29,7 @@
 }
 
 .flyout-head {
+  @include border-top-radius($border-radius-m);
   border-width: 0 0 1px;
 }
 .flyout-body {
@@ -32,6 +38,7 @@
   margin: -1px 0;
 }
 .flyout-footer {
+  @include border-bottom-radius($border-radius-m);
   border-width: 1px 0 0;
 }
 
