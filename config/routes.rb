@@ -78,6 +78,7 @@ MAdeK::Application.routes.draw do
     collection do
       get :keywords
       post :edit_multiple
+      get :edit_multiple
       put :update_multiple
       post :media_sets
       delete :media_sets
