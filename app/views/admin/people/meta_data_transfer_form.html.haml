@@ -1,4 +1,7 @@
-%form
-    %label ID der empfangenden Person: 
-    %input{type: 'text'}
-    %button{type: 'submit'} Transferieren
+= form_tag method: 'POST', action: 'meta_data_transfer'
+= label_tag :id_receiver,  "ID der empfangenden Person:"
+= text_field_tag :id_receiver 
+= submit_tag  "Metadaten transferieren"
+
+
+
