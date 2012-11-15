@@ -2,6 +2,14 @@ body {
   min-width: 940px;
 }
 
+// CLIPBOARD
+
+.clipboard-wrapper {
+  @include position-bottom-left($space-s,$space-s);
+  @include position-bottom-right($space-s,$space-s);
+  position: fixed;
+  z-index: 400;
+}
 
 /**
  *
@@ -40,7 +48,6 @@ body {
   table-layout:fixed;
   width: 100%;
 }
-
 
 // HOME PAGE VIEW
 

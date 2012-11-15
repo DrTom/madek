@@ -1,3 +1,34 @@
+.container.inverted-transparent.clipboard-wrapper
+  .clipboard-toggle.inverted-transparent
+    %a.tertiary-button.block.small{:href => "#"}
+      %i.icon-clipboard.bright
+      Zwischenablage (% Medientr&auml;ge)
+      %i.icon-arrow-down.bright.stand-alone
+  .col5of6
+    %ul.media-entries.grid.tight.active
+      %li.media-entries-item
+        %a.thumbnail-wrapper.media-entry{:href => "#"}
+          .thumbnail-package.small
+            %img{:alt => "Thumb-package-7z-small", :src => "/assets/redesign/thumbnails/thumb-package-7z-small.png"}
+      %li.media-entries-item
+        %a.thumbnail-wrapper.media-entry{:href => "#"}
+          .thumbnail-doc.small
+            %img{:alt => "Thumb-doc-ods-small", :src => "/assets/redesign/thumbnails/thumb-doc-ods-small.png"}
+      %li.media-entries-item
+        %a.thumbnail-wrapper.media-entry{:href => "#"}
+          .thumbnail-video.small
+            %img{:alt => "Thumb-video-mpg-small", :src => "/assets/redesign/thumbnails/thumb-video-mpg-small.png"}
+      %li.media-entries-item
+        %a.thumbnail-wrapper.media-entry{:href => "#"}
+          .thumbnail-audio.small
+            %img{:alt => "Thumb-audio-aif-small", :src => "/assets/redesign/thumbnails/thumb-audio-aif-small.png"}
+  .col1of6
+    .clipboard-actions
+      %a.primary-button.block{:href => "#"}
+        Aktionen
+        %i.icon-arrow-down.bright.stand-alone
+      %a.tertiary-button.small.block{:href => "#"} Zwischenablage Leeren
+
 .app-content-wrapper.container.view-dashboard
 
   // Header
@@ -731,6 +762,7 @@
 // Footer
 
 .app-footer-wrapper
+
   %footer.app-footer.container.inverted
     %ul.footer-menu
       %li.footer-menu-item
@@ -752,6 +784,3 @@
     .footer-instance-area.col2of6
       %a.footer-instance-logo{:href => "#"}= image_tag "redesign/inserts/image-logo-madek.png"
       %h1.footer-copyrights &copy; 2009-2011 Z&uuml;rcher Hochschule der K&uuml;nste
-
-// %h2= "Users#show"
-// %a{:href => media_resources_path}= "MediaResources"
