@@ -10,4 +10,4 @@
 
 #= require ./vendor/plupload-1.5.4/plupload
 #= require ./vendor/plupload-1.5.4/jquery.plupload.queue
-
+#= require ./vendor/plupload-1.5.4/plupload.html5

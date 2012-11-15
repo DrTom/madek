@@ -268,3 +268,9 @@ $icons: sprite-map("redesign/icons/*.png");
     @include ixt-sprite($icons, icon-plus-bright);
   }
 }
+.icon-ok {
+  @include ixt-sprite($icons, icon-ok-dark);
+  &.bright {
+    @include ixt-sprite($icons, icon-ok-bright);
+  }
+}
