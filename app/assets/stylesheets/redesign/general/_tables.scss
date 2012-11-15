@@ -1,6 +1,8 @@
 /**
  * ## Tables
  *
+ * .borderless    - Borderless tables
+ *
  * Styleguide 2.5
  */
 
@@ -35,4 +37,13 @@ td {
   line-height: $line-height-m;
   padding: $space-x;
   vertical-align: top;
+}
+
+// Borderless Tables
+
+.borderless {
+  td,
+  caption {
+    border: none;
+  }
 }
