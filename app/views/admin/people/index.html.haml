@@ -6,7 +6,12 @@
 %table.datatable
   %thead
     %tr
-      - [_("ID"), _("Firstname"), _("Lastname"), _("Pseudonym"), _("User"), ""].each do |s|
-        %th= s
+      %th ID
+      %th Firstname
+      %th Lastname 
+      %th MetaData
+      %th Pseudonym
+      %th User
+
   %tbody
     = render :partial => "show", :collection => @people, :as => :person

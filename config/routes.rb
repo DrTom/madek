@@ -261,6 +261,10 @@ MAdeK::Application.routes.draw do
 
     resources :people do
       resources :users, :only => [:new, :create]
+      member do
+        get 'meta_data_transfer_form'
+        post 'meta_data_transfer'
+      end
     end
 
     resources :groups do

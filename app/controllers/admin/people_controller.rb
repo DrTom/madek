@@ -35,5 +35,11 @@ class Admin::PeopleController < Admin::AdminController
     @person.update_attributes(params[:person])
     redirect_to admin_people_path
   end
+
+######
+  
+  def meta_data_transfer_form
+    render layout: false
+  end
   
 end
